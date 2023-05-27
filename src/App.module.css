@@ -110,7 +110,9 @@ body {
         margin-left: 0;
     }
     .container .rightBig .rightArrow {
-        margin-right: 0;
+        margin-left: -5;
+        margin-top: 0px;
+        transform: rotate(90deg);
     }
     .container .rightSide .grid {
         gap: 15px;
