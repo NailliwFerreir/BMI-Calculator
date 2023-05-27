@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headerContainer {
+    max-width: 900px;
+    margin: 40px auto;
+}
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/*Left Side*/
+.container .leftSide {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.container .leftSide h1{
+    margin: 0;
+    font-size: 40px;
+    color: #3A4B5C;
+}
+.container .leftSide p{
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #6A7D8B;
+}
+.container .leftSide input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgba(150,163,171,0.5);
+    padding: 10px 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+}
+.container .leftSide button{
+    background-color: #227C9D;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: all ease 300ms;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+/*Right Side*/
+.container .rightSide {
+    flex: 1;
+    margin-left: 40px;
+    display: flex;
+}
+.container .rightSide .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container .rightBig {
+    flex: 1;
+    display: flex;
+}
+.container .rightBig .rightArrow {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #227C9D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -35px;
+    cursor: pointer;
+    margin-top: 145px;
+
+}
+@media (max-width: 920px) {
+    header {
+        padding: 0 20px;
+    }
+    .container {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .leftSide {
+        margin-right: 0;
+    }
+    .container .leftSide button {
+        margin-bottom: 20px;
+    }
+    .container .rightSide {
+        margin-left: 0;
+    }
+    .container .rightBig .rightArrow {
+        margin-right: 0;
+    }
+    .container .rightSide .grid {
+        gap: 15px;
+    }
+    
+}
