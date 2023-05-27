@@ -108,6 +108,7 @@ body {
     }
     .container .rightSide {
         margin-left: 0;
+        margin-bottom: 30px;
     }
     .container .rightBig .rightArrow {
         margin-left: -5;
